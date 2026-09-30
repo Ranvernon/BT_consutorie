@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         const exp = link.getAttribute('aria-expanded') === 'true';
         link.setAttribute('aria-expanded', !exp);
+        link.blur();
       }
     });
     link.addEventListener('keydown', e => {
