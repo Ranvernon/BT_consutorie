@@ -20,8 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!nav.contains(e.target)) { menu.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); }
   });
 
-  /* Keyboard nav on dropdowns */
+  /* Dropdown toggle (tap on mobile, keyboard everywhere) */
   document.querySelectorAll('.navbar__link--caret').forEach(link => {
+    link.addEventListener('click', e => {
+      if (menu.classList.contains('open')) {
+        e.preventDefault();
+        const exp = link.getAttribute('aria-expanded') === 'true';
+        link.setAttribute('aria-expanded', !exp);
+      }
+    });
     link.addEventListener('keydown', e => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
@@ -37,8 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.registerPlugin(ScrollTrigger);
     [
       ['.a-fade',  { opacity:0, y:24 },  { opacity:1, y:0 }],
-      ['.a-left',  { opacity:0, x:-32 }, { opacity:1, x:0 }],
-      ['.a-right', { opacity:0, x:32 },  { opacity:1, x:0 }],
+      ['.a-left',  { opacity:0, y:24 }, { opacity:1, y:0 }],
+      ['.a-right', { opacity:0, y:24 },  { opacity:1, y:0 }],
       ['.a-scale', { opacity:0, scale:.94 }, { opacity:1, scale:1 }],
     ].forEach(([sel, from, to]) => {
       gsap.utils.toArray(sel).forEach((el, i) => {
@@ -62,6 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* Smooth scroll */
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
+      if (a.classList.contains('navbar__link--caret') && menu.classList.contains('open')) return;
       const id = a.getAttribute('href');
       if (id === '#') {
         e.preventDefault();

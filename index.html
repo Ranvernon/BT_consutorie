@@ -3,16 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Consultoria em Gestão da Qualidade, ISO, auditorias e melhoria de processos. Mais de 15 anos de experiência prática para ajudar empresas a estruturar processos e melhorar resultados.">
+  <meta name="description" content="Consultoria em Gestão da Qualidade, ISO, auditorias e melhoria de processos. Mais de 20 anos de experiência prática para ajudar empresas a estruturar processos e melhorar resultados.">
   <meta name="theme-color" content="#7f1d1d">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.btconsultoria.com.br/">
   <meta property="og:title" content="BT Consultoria | Gestão da Qualidade, ISO e Melhoria de Processos">
-  <meta property="og:description" content="Consultoria especializada em Gestão da Qualidade, ISO, melhoria de processos e preparação para auditorias, com mais de 15 anos de experiência prática.">
+  <meta property="og:description" content="Consultoria especializada em Gestão da Qualidade, ISO, melhoria de processos e preparação para auditorias, com mais de 20 anos de experiência prática.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://www.btconsultoria.com.br/">
+  <meta property="og:site_name" content="BT Consultoria">
+  <meta property="og:image" content="https://www.btconsultoria.com.br/imagens/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BT Consultoria | Gestão da Qualidade, ISO e Melhoria de Processos">
+  <meta name="twitter:description" content="Consultoria especializada em Gestão da Qualidade, ISO, melhoria de processos e preparação para auditorias, com mais de 20 anos de experiência prática.">
+  <meta name="twitter:image" content="https://www.btconsultoria.com.br/imagens/og-image.jpg">
   <title>BT Consultoria | Gestão da Qualidade, ISO e Melhoria de Processos</title>
-  <link rel="icon" type="image/png" href="Storie cópia 2.png">
+  <link rel="icon" type="image/png" href="imagens/favicon.png">
+  <link rel="apple-touch-icon" href="imagens/favicon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,6 +40,8 @@
     "@type": "ProfessionalService",
     "name": "BT Consultoria",
     "description": "Consultoria em Gestão da Qualidade, ISO 9001, auditorias internas, melhoria de processos e preparação para auditorias.",
+    "url": "https://www.btconsultoria.com.br/",
+    "image": "https://www.btconsultoria.com.br/imagens/og-image.jpg",
     "areaServed": "BR",
     "email": "contato@btconsultoria.com.br",
     "telephone": "+5548996426093",
@@ -38,9 +50,9 @@
   </script>
 </head>
 <body>
-<a href="#main" class="skip-link">Ir para o conteúdo principal</a>
 
-<!-- ═══ TOP BAR ═══ -->
+<!-- ═══ CABEÇALHO (TOP BAR + NAVBAR) ═══ -->
+<header class="site-header">
 <div class="topbar">
   <div class="container topbar__inner">
     <div class="topbar__left">
@@ -66,17 +78,49 @@
   <div class="container navbar__inner">
     <a href="#" class="navbar__logo" aria-label="BT Consultoria">
       <div class="navbar__logo-mark"><img src="imagens/Storie cópia 2.png" alt="BT Consultoria"></div>
-      <img src="imagens/Storie cópia 3.png" alt="BT Consultoria" style="height:140px;width:auto;display:block; padding-top: 15px;">
+      <img src="imagens/bt-wordmark.png" alt="BT Consultoria" class="navbar__wordmark">
     </a>
 
     <ul class="navbar__nav" id="navMenu" role="menubar">
       <li class="navbar__item" role="none"><a href="#" class="navbar__link" role="menuitem">Início</a></li>
-      <li class="navbar__item" role="none"><a href="#sobre" class="navbar__link" role="menuitem">Sobre</a></li>
+      <li class="navbar__item" role="none">
+        <a href="#sobre" class="navbar__link navbar__link--caret" role="menuitem" aria-haspopup="true" aria-expanded="false">Sobre</a>
+        <div class="navbar__dropdown" role="menu">
+          <div class="navbar__dd-header">Sobre a BT Consultoria</div>
+          <a href="#sobre" class="navbar__dd-link" role="menuitem">
+            <span class="dd-ico"><i class="ph-bold ph-buildings"></i></span>
+            <span><span class="dd-name">Nossa Abordagem</span><span class="dd-desc">Como trabalhamos a Gestão da Qualidade</span></span>
+          </a>
+          <a href="#especialista" class="navbar__dd-link" role="menuitem">
+            <span class="dd-ico"><i class="ph-bold ph-user-circle"></i></span>
+            <span><span class="dd-name">Experiência</span><span class="dd-desc">Quem está por trás da consultoria</span></span>
+          </a>
+
+        </div>
+      </li>
       <li class="navbar__item" role="none"><a href="#servicos" class="navbar__link" role="menuitem">Soluções</a></li>
       <li class="navbar__item" role="none"><a href="#metodologia" class="navbar__link" role="menuitem">Metodologia</a></li>
-      <li class="navbar__item" role="none"><a href="#especialista" class="navbar__link" role="menuitem">Experiência</a></li>
       <li class="navbar__item" role="none"><a href="#conteudos" class="navbar__link" role="menuitem">Conteúdos</a></li>
+      <li class="navbar__item" role="none">
+        <a href="#" class="navbar__link navbar__link--caret" role="menuitem" aria-haspopup="true" aria-expanded="false">Blog</a>
+        <div class="navbar__dropdown" role="menu">
+          <div class="navbar__dd-header">Conteúdos</div>
+          <a href="#" class="navbar__dd-link" role="menuitem">
+            <span class="dd-ico"><i class="ph-bold ph-newspaper"></i></span>
+            <span><span class="dd-name">Blog da Qualidade Eficaz</span><span class="dd-desc">Artigos e novidades sobre Gestão da Qualidade</span></span>
+          </a>
+          <a href="#" class="navbar__dd-link" role="menuitem">
+            <span class="dd-ico"><i class="ph-bold ph-file-text"></i></span>
+            <span><span class="dd-name">Materiais para Gestão da Qualidade</span><span class="dd-desc">Guias e materiais para baixar</span></span>
+          </a>
+          <a href="#" class="navbar__dd-link" role="menuitem">
+            <span class="dd-ico"><i class="ph-bold ph-video-camera"></i></span>
+            <span><span class="dd-name">Vídeos sobre Qualidade</span><span class="dd-desc">Conteúdo em vídeo sobre o tema</span></span>
+          </a>
+        </div>
+      </li>
       <li class="navbar__item" role="none"><a href="#contato" class="navbar__link" role="menuitem">Contato</a></li>
+      <li class="navbar__item navbar__item--mobile-cta" role="none"><a href="#contato" class="navbar__cta" role="menuitem"><i class="ph-bold ph-arrow-up-right"></i> Solicitar Diagnóstico</a></li>
     </ul>
 
     <div class="navbar__right">
@@ -93,6 +137,7 @@
     </button>
   </div>
 </nav>
+</header>
 
 <main id="main">
 
@@ -105,7 +150,7 @@
         Gestão da Qualidade<br>que <em>gera resultado</em>.
       </h1>
       <p class="hero__sub">
-        Consultoria especializada em Gestão da Qualidade, ISO, melhoria de processos e preparação para auditorias, com mais de 15 anos de experiência prática na área.
+        Consultoria especializada em Gestão da Qualidade, ISO, melhoria de processos e preparação para auditorias, com mais de 20 anos de experiência prática na área.
       </p>
       <div class="hero__actions">
         <a href="#contato" class="btn-primary">
@@ -117,7 +162,7 @@
       </div>
       <div class="hero__trust">
         <div class="hero__trust-item">
-          <i class="ph-fill ph-calendar-check"></i> +15 anos de experiência prática
+          <i class="ph-fill ph-calendar-check"></i> +20 anos de experiência prática
         </div>
         <div class="hero__trust-div" aria-hidden="true"></div>
         <div class="hero__trust-item">
@@ -165,7 +210,7 @@
 
       <div class="hero__float hero__float--br">
         <div class="float-ico float-ico--gold"><i class="ph-bold ph-star"></i></div>
-        <div><div class="float-lbl">Experiência</div><div class="float-val">+15 anos na área</div></div>
+        <div><div class="float-lbl">Experiência</div><div class="float-val">+20 anos na área</div></div>
       </div>
     </div>
   </div>
@@ -179,7 +224,7 @@
       <div class="pillar__body">
         <div class="pillar__code">01</div>
         <div class="pillar__name">Experiência prática</div>
-        <p class="pillar__desc">Mais de 15 anos de atuação direta na estruturação, implantação e melhoria de processos e sistemas de gestão.</p>
+        <p class="pillar__desc">Mais de 20 anos de atuação direta na estruturação, implantação e melhoria de processos e sistemas de gestão.</p>
       </div>
     </div>
     <div class="pillar a-fade">
@@ -370,11 +415,11 @@
 <section class="process" id="metodologia">
   <div class="container">
     <div class="section-header section-header--center a-fade">
-      <div class="section-eyebrow">Metodologia</div>
-      <h2 class="section-title">Como conduzimos o <em>trabalho</em></h2>
+      <div class="section-eyebrow">Nossa Forma de Trabalhar</div>
+      <h2 class="section-title">Cada ferramenta precisa ter uma <em>finalidade</em></h2>
       <p class="section-sub">Processo estruturado, com marcos claros e responsabilidades definidas em cada etapa.</p>
     </div>
-    <div class="process__steps process__steps--5">
+    <div class="process__steps process__steps--6">
       <div class="step a-fade">
         <div class="step__num">01</div>
         <h3 class="step__title">Diagnóstico</h3>
@@ -382,50 +427,108 @@
       </div>
       <div class="step a-fade">
         <div class="step__num">02</div>
-        <h3 class="step__title">Planejamento</h3>
-        <p class="step__desc">Definição das prioridades e plano de ação.</p>
+        <h3 class="step__title">Mapeamento dos processos</h3>
+        <p class="step__desc">Levantamento de como o trabalho realmente acontece.</p>
       </div>
       <div class="step a-fade">
         <div class="step__num">03</div>
-        <h3 class="step__title">Implementação</h3>
-        <p class="step__desc">Aplicação das melhorias e estruturação dos processos.</p>
+        <h3 class="step__title">Análise dos dados</h3>
+        <p class="step__desc">Avaliação de indicadores, controles e registros existentes.</p>
       </div>
       <div class="step a-fade">
         <div class="step__num">04</div>
-        <h3 class="step__title">Acompanhamento</h3>
-        <p class="step__desc">Monitoramento dos resultados e evolução do sistema.</p>
+        <h3 class="step__title">Problemas e oportunidades</h3>
+        <p class="step__desc">Identificação de gargalos, riscos e pontos de melhoria.</p>
       </div>
       <div class="step a-fade">
         <div class="step__num">05</div>
-        <h3 class="step__title">Melhoria Contínua</h3>
-        <p class="step__desc">Acompanhamento da evolução e manutenção dos resultados.</p>
+        <h3 class="step__title">Definição conjunta das soluções</h3>
+        <p class="step__desc">Ferramentas e controles definidos junto com a empresa.</p>
+      </div>
+      <div class="step a-fade">
+        <div class="step__num">06</div>
+        <h3 class="step__title">Implantação que gera resultado</h3>
+        <p class="step__desc">Aplicação prática, com impacto direto na operação.</p>
       </div>
     </div>
+    <p class="process__note a-fade">
+      Primeiro compreendemos a realidade da empresa. Depois definimos, junto com ela, quais ferramentas, controles, indicadores, padronizações ou soluções tecnológicas realmente fazem sentido. Assim, a implantação deixa de ser somente documental e contribui diretamente para a operação.
+    </p>
   </div>
 </section>
 
 <!-- ═══ SOBRE O ESPECIALISTA ═══ -->
 <section class="authority" id="especialista">
   <div class="container authority__inner">
-    <div class="authority__photo a-left" aria-hidden="true">
-      <i class="ph-bold ph-user-circle"></i>
-      <span>Foto profissional em breve</span>
+    <div class="authority__photo a-left">
+      <img src="imagens/bt.jpg" alt="Foto profissional da consultora">
     </div>
     <div class="a-right">
       <div class="about__eyebrow">Experiência</div>
       <h2 class="about__title">Experiência que vem da <em>prática</em></h2>
-      <p class="about__text">Mais de 15 anos de experiência na área de Qualidade, atuando na estruturação, acompanhamento e melhoria de processos e sistemas de gestão.</p>
+      <p class="about__text">Mais de 20 anos de experiência na área de Qualidade, atuando na estruturação, acompanhamento e melhoria de processos e sistemas de gestão.</p>
       <div class="authority__card">
-        <div class="authority__row"><i class="ph-bold ph-user"></i> [NOME DO CONSULTOR]</div>
-        <div class="authority__row"><i class="ph-bold ph-briefcase"></i> Especialista em Gestão da Qualidade</div>
-        <div class="authority__row"><i class="ph-bold ph-calendar-check"></i> +15 anos de experiência</div>
-        <div class="authority__row"><i class="ph-bold ph-graduation-cap"></i> [FORMAÇÃO]</div>
-        <div class="authority__row"><i class="ph-bold ph-seal-check"></i> [CERTIFICAÇÕES]</div>
-        <div class="authority__row"><i class="ph-bold ph-list-checks"></i> [PRINCIPAIS ÁREAS DE EXPERIÊNCIA]</div>
+        <div class="authority__row"><i class="ph-bold ph-user"></i>Barbára R. Teotônio</div>
+        <div class="authority__row"><i class="ph-bold ph-briefcase"></i> Especialista em Gestão da Qualidade e Meio Ambiente</div>
+        <div class="authority__row"><i class="ph-bold ph-calendar-check"></i> +20 anos de experiência — do controle de qualidade à gestão</div>
+        <div class="authority__row"><i class="ph-bold ph-graduation-cap"></i> Gestão Administrativa da Qualidade · Engenharia de Produção · Tecnóloga em Gestão da Qualidade · Tecnóloga em Gestão Ambiental</div>
+      </div>
+
+      <div class="authority__areas">
+        <div class="area-item a-fade">
+          <div class="area-item__dot"></div>
+          <div>
+            <div class="area-item__title">Gestão da Qualidade e Meio Ambiente</div>
+            <p class="area-item__desc">Implantação e melhoria de sistemas de gestão com foco nas normas ISO 9001 e ISO 14001.</p>
+          </div>
+        </div>
+        <div class="area-item a-fade">
+          <div class="area-item__dot"></div>
+          <div>
+            <div class="area-item__title">Certificação de Produtos</div>
+            <p class="area-item__desc">Adequação de processos e documentação para certificação junto ao Inmetro.</p>
+          </div>
+        </div>
+        <div class="area-item a-fade">
+          <div class="area-item__dot"></div>
+          <div>
+            <div class="area-item__title">Melhoria Contínua</div>
+            <p class="area-item__desc">Aplicação de Lean Manufacturing, Six Sigma e ferramentas da qualidade para reduzir desperdícios e otimizar processos.</p>
+          </div>
+        </div>
+        <div class="area-item a-fade">
+          <div class="area-item__dot"></div>
+          <div>
+            <div class="area-item__title">5S e Boas Práticas de Fabricação</div>
+            <p class="area-item__desc">Organização dos ambientes e padronização das rotinas.</p>
+          </div>
+        </div>
+        <div class="area-item a-fade">
+          <div class="area-item__dot"></div>
+          <div>
+            <div class="area-item__title">Gestão de Resíduos</div>
+            <p class="area-item__desc">Orientação sobre segregação, documentação e destinação adequada.</p>
+          </div>
+        </div>
+        <div class="area-item a-fade">
+          <div class="area-item__dot"></div>
+          <div>
+            <div class="area-item__title">Análise de Indicadores e Não Conformidades</div>
+            <p class="area-item__desc">Investigação de causas e definição de ações para melhorar os resultados.</p>
+          </div>
+        </div>
+        <div class="area-item a-fade">
+          <div class="area-item__dot"></div>
+          <div>
+            <div class="area-item__title">Treinamento e Desenvolvimento de Equipes</div>
+            <p class="area-item__desc">Orientação prática para fortalecer a qualidade e a responsabilidade ambiental no dia a dia.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- ═══ MISSÃO / VISÃO / VALORES ═══ -->
 <section class="mvv" id="mvv">
@@ -436,20 +539,20 @@
       <p class="section-sub">Não vendemos apenas documentação. Temos um propósito claro e valores que guiam cada projeto.</p>
     </div>
     <div class="mvv__grid">
-      <div class="mvv-card a-fade">
-        <div class="mvv-card__num">01</div>
+      <div class="mvv-card mvv-card--lead a-fade">
+        <div class="mvv-card__icon"><i class="ph-bold ph-arrow-up-right"></i></div>
         <div class="mvv-card__tag">Missão</div>
         <h3 class="mvv-card__title">Por que existimos</h3>
         <p class="mvv-card__text">Ajudar empresas a estruturar e aprimorar sua Gestão da Qualidade, transformando processos mais eficientes em resultados sustentáveis.</p>
       </div>
       <div class="mvv-card a-fade">
-        <div class="mvv-card__num">02</div>
+        <div class="mvv-card__icon"><i class="ph-bold ph-arrow-up-right"></i></div>
         <div class="mvv-card__tag">Visão</div>
         <h3 class="mvv-card__title">Para onde vamos</h3>
         <p class="mvv-card__text">Ser reconhecida pela excelência técnica, proximidade com o cliente e capacidade de transformar desafios de Qualidade em oportunidades de melhoria.</p>
       </div>
       <div class="mvv-card a-fade">
-        <div class="mvv-card__num">03</div>
+        <div class="mvv-card__icon"><i class="ph-bold ph-arrow-up-right"></i></div>
         <div class="mvv-card__tag">Valores</div>
         <h3 class="mvv-card__title">Como agimos</h3>
         <div class="mvv-card__values">
@@ -476,7 +579,7 @@
       <div class="service-card a-fade">
         <div class="service-card__icon"><i class="ph-bold ph-calendar-check"></i></div>
         <h3 class="service-card__title">Experiência</h3>
-        <p class="service-card__desc">Mais de 15 anos de experiência prática na área.</p>
+        <p class="service-card__desc">Mais de 20 anos de experiência prática na área.</p>
       </div>
       <div class="service-card a-fade">
         <div class="service-card__icon"><i class="ph-bold ph-chart-line-up"></i></div>
@@ -654,7 +757,7 @@
           <div class="footer__logo-mark">BT</div>
           <span class="footer__logo-text">BT Consultoria</span>
         </div>
-        <p class="footer__brand-desc">Consultoria em Gestão da Qualidade, ISO, auditorias e melhoria de processos, com mais de 15 anos de experiência prática na área.</p>
+        <p class="footer__brand-desc">Consultoria em Gestão da Qualidade, ISO, auditorias e melhoria de processos, com mais de 20 anos de experiência prática na área.</p>
         <div class="footer__socials">
           <a href="#" class="footer__social" aria-label="LinkedIn"><i class="ph-bold ph-linkedin-logo"></i></a>
           <a href="#" class="footer__social" aria-label="Instagram"><i class="ph-bold ph-instagram-logo"></i></a>
