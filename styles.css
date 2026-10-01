@@ -109,7 +109,7 @@ ul { list-style: none; }
 .navbar__nav { display: flex; align-items: center; gap: 2px; flex: 1; justify-content: center; }
 .navbar__item { position: relative; }
 .navbar__link {
-  display: flex; align-items: center; gap: 4px;
+  display: flex; align-items: center; justify-content: center; gap: 4px;
   padding: 8px 14px;
   font-size: .78rem; font-weight: 600; letter-spacing: .07em; text-transform: uppercase;
   color: rgba(255,255,255,.78);
