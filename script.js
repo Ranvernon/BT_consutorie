@@ -89,31 +89,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* Formulário de contato -> abre e-mail com os dados preenchidos */
+  /* Formulário de contato -> envia direto por e-mail via FormSubmit */
   const form = document.getElementById('contactForm');
   if (form) {
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      const data = new FormData(form);
-      const nome = data.get('nome') || '';
-      const empresa = data.get('empresa') || '';
-      const cargo = data.get('cargo') || '';
-      const email = data.get('email') || '';
-      const telefone = data.get('telefone') || '';
-      const necessidade = data.get('necessidade') || '';
-      const mensagem = data.get('mensagem') || '';
-
-      const subject = `Solicitação de Diagnóstico — ${empresa || nome}`;
-      const body =
-        `Nome: ${nome}\n` +
-        `Empresa: ${empresa}\n` +
-        `Cargo: ${cargo}\n` +
-        `E-mail: ${email}\n` +
-        `Telefone/WhatsApp: ${telefone}\n` +
-        `Necessidade: ${necessidade}\n\n` +
-        `Mensagem:\n${mensagem}`;
-
-      window.location.href = `mailto:contato@btconsultoria.com.br?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    form.addEventListener('submit', () => {
+      const btn = form.querySelector('.contact__submit');
+      if (btn) { btn.disabled = true; btn.style.opacity = '.7'; }
     });
+  }
+
+  /* Mensagem de sucesso após envio (?enviado=1 na URL) */
+  if (new URLSearchParams(window.location.search).get('enviado') === '1') {
+    const success = document.getElementById('formSuccess');
+    if (success) {
+      success.hidden = false;
+      if (form) form.hidden = true;
+    }
+    const cleanUrl = window.location.pathname + window.location.hash;
+    window.history.replaceState({}, '', cleanUrl);
   }
 });

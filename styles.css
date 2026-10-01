@@ -810,6 +810,7 @@ ul { list-style: none; }
 .contact__info { margin-top: 2rem; display: flex; flex-direction: column; gap: .9rem; }
 .contact__info-row { display: flex; align-items: center; gap: 10px; font-size: .92rem; font-weight: 600; color: var(--g700); }
 .contact__info-row i { color: var(--c600); font-size: 1.1rem; width: 22px; text-align: center; flex-shrink: 0; }
+.contact__form[hidden] { display: none; }
 .contact__form {
   background: var(--g50);
   border: 1px solid var(--g200);
@@ -829,6 +830,15 @@ ul { list-style: none; }
 .form-row input:focus, .form-row select:focus, .form-row textarea:focus { outline: none; border-color: var(--c500); }
 .form-row textarea { resize: vertical; }
 .contact__submit { justify-content: center; margin-top: .4rem; }
+.form-success[hidden] { display: none; }
+.form-success {
+  display: flex; align-items: flex-start; gap: 14px;
+  background: #f0fdf4; border: 1.5px solid #bbf7d0;
+  border-radius: var(--r-xl); padding: 2rem; margin-bottom: 1.5rem;
+}
+.form-success i { font-size: 1.6rem; color: #16a34a; flex-shrink: 0; margin-top: 2px; }
+.form-success strong { display: block; font-size: 1rem; color: #166534; margin-bottom: .3rem; }
+.form-success p { font-size: .88rem; color: #15803d; line-height: 1.6; }
 
 /* ════════════════════════════════════
    WHATSAPP FLUTUANTE
